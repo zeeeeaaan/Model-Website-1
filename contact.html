@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SamLisa Energy</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.png" alt="SamLisa Energy Logo" class="logo" />
+        <span class="brand-text">SamLisa <strong>Energy</strong></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown">
+            <a href="services.html">Services</a>
+            <ul class="dropdown">
+              <li><a href="services.html#residential">Residential</a></li>
+              <li><a href="services.html#commercial">Commercial</a></li>
+            </ul>
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html" class="btn-primary nav-cta active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal">Get in Touch</h1>
+      <p class="reveal">
+        Share a few details about your property and we’ll help you plan the right energy solution.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact + Map -->
+  <section class="section">
+    <div class="container grid two-cols">
+      <!-- Form -->
+      <div class="reveal">
+        <h2>Contact Form</h2>
+        <form class="contact-form" action="https://formspree.io/f/mdkyzzqy" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+61 ..." />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Type</label>
+            <select id="service" name="service">
+              <option value="">Select an option</option>
+              <option>Residential Heating & Cooling</option>
+              <option>Residential Solar / Battery</option>
+              <option>Commercial Heating & Cooling</option>
+              <option>Commercial Solar / Battery</option>
+              <option>EV Charging</option>
+              <option>Maintenance / Service</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your property and goals"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-large">Submit Enquiry</button>
+          <p class="form-note">We aim to respond to all enquiries within one business day.</p>
+        </form>
+      </div>
+
+      <!-- Contact Info + Map -->
+      <div class="reveal">
+        <h2>Our Details</h2>
+        <ul class="contact-details">
+          <li><strong>Location:</strong> Victoria, Australia</li>
+          <li><strong>Phone:</strong> <a href="tel:+61489988125">+61 489 988 125</a></li>
+          <li><strong>Email:</strong> <a href="mailto:samlisa329@gmail.com">samlisa329@gmail.com</a></li>
+        </ul>
+        <p>
+          We service a wide range of suburbs and regions across Victoria. Get in touch to confirm
+          availability for your area.
+        </p>
+
+        <div class="map-wrapper">
+          <!-- Simple Google Maps embed centred on Victoria -->
+          <iframe
+            title="SamLisa Energy - Victoria, Australia"
+            src="https://www.google.com/maps?q=Victoria%20Australia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <img src="assets/images/logo.png" alt="SamLisa Energy Logo" class="logo small" />
+          <span class="brand-text">SamLisa <strong>Energy</strong></span>
+        </div>
+        <p>Ready to plan your next heating, cooling, or solar project.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>Victoria, Australia</li>
+          <li><a href="tel:+61489988125">+61 489 988 125</a></li>
+          <li><a href="mailto:samlisa329@gmail.com">samlisa329@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 SamLisa Energy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
